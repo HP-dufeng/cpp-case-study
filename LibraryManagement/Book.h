@@ -2,17 +2,8 @@
 // Created by feng on 19-4-16.
 //
 
-#ifndef LIBRARYMANAGEMENT_BOOK_H
-#define LIBRARYMANAGEMENT_BOOK_H
 
-#endif //LIBRARYMANAGEMENT_BOOK_H
-
-#include <string>
-#include <iostream>
-#include <list>
-using namespace std;
-
-class Book{
+class Book {
 public:
     Book();
     Book(const string &author, const string &title);
@@ -37,7 +28,7 @@ public:
 
     static int MaxBookId;
 
-    friend ostream& operator<<(ostream &outStream, const Book &book);
+    friend ostream &operator<<(ostream &outStream, const Book &book);
 
 private:
     bool m_borrowed = false;

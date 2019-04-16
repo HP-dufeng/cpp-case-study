@@ -14,7 +14,7 @@ using namespace std;
 
 int Customer::MaxCustomerId;
 
-Customer::Customer() {}
+Customer::Customer() = default;
 
 Customer::Customer(const string &name, const string &address)
     :m_customerId(++MaxCustomerId),

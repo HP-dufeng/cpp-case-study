@@ -9,12 +9,13 @@
 using namespace std;
 
 #include "Book.h"
-#include "Library.h"
 #include "Customer.h"
+#include "Library.h"
+
 
 int Book::MaxBookId = 0;
 
-Book::Book() {}
+Book::Book() = default;
 
 Book::Book(const string &author, const string &title)
      :m_bookId(++MaxBookId),
@@ -81,8 +82,8 @@ void Book::unreserveBookation(int customerId) {
     m_reservationList.remove(customerId);
 }
 
-ostream& operator<<(ostream &outStream, const Book &book) {
-    outStream << "\"" << book.m_title << "\"by" << book.m_author;
+ostream &operator<<(ostream &outStream, const Book &book) {
+    outStream << "\"" << book.m_title << "\" by " << book.m_author;
 
     if(book.m_borrowed) {
         outStream << endl << "Borrowed by:"

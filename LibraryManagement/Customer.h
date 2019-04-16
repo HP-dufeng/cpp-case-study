@@ -2,15 +2,6 @@
 // Created by feng on 19-4-16.
 //
 
-#ifndef LIBRARYMANAGEMENT_CUSTOMER_H
-#define LIBRARYMANAGEMENT_CUSTOMER_H
-
-#endif //LIBRARYMANAGEMENT_CUSTOMER_H
-
-#include <string>
-#include <set>
-using namespace std;
-
 class Customer {
 public:
     Customer();
