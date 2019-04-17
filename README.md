@@ -6,3 +6,4 @@
 
 
 - [Library Manament](LibraryManagement)
+- [TextQuery](TextQuery) - c++ primer chapter 12
