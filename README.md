@@ -8,3 +8,4 @@
 - [Library Management](LibraryManagement)
 - [Library Management Improved](LibraryManagementImproved) -- use point to improved project 
 - [TextQuery](TextQuery) -- c++ primer chapter 12
+- [Clock](Clock) -- use qt to create a clock app
