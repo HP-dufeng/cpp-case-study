@@ -1,3 +1,14 @@
+include(../qmake-target-platform.pri)
+include(../qmake-destination-path.pri)
+
+DESTDIR = $$PWD/../binaries/$$DESTINATION_PATH
+OBJECTS_DIR = $$PWD/build/$$DESTINATION_PATH/.obj
+MOC_DIR = $$PWD/build/$$DESTINATION_PATH/.moc
+RCC_DIR = $$PWD/build/$$DESTINATION_PATH/.qrc
+UI_DIR = $$PWD/build/$$DESTINATION_PATH/.ui
+
+LIBS += -L$$PWD/../binaries/$$DESTINATION_PATH -lcm-lib
+
 QT += quick
 CONFIG += c++11
 
@@ -12,7 +23,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-INCLUDEPATH += source
+INCLUDEPATH += source \
+    ../cm-lib/source
 
 SOURCES += source/main.cpp
 
@@ -28,3 +40,5 @@ QML_DESIGNER_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+

@@ -1,5 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
+
+#include <controllers/mastercontroller.h>
 
 int main(int argc, char *argv[])
 {
@@ -7,8 +10,12 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
+    qmlRegisterType<cm::controllers::MasterController>("CM", 1, 0, "MasterController");
+    cm::controllers::MasterController masterController;
+
     QQmlApplicationEngine engine;
-    const QUrl url(QStringLiteral("qrc:/views/main.qml"));
+    engine.rootContext()->setContextProperty("masterController", &masterController);
+    const QUrl url(QStringLiteral("qrc:/views/MasterView.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {
         if (!obj && url == objUrl)
