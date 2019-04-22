@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.9.0, 2019-04-22T08:44:52. -->
+<!-- Written by QtCreator 4.9.0, 2019-04-22T09:34:55. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -315,7 +315,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/feng/workspace/cpp/qt/shadow-builds/cm-ui</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/feng/workspace/cpp/cpp-case-study/cm/cm-ui/../binaries/linux/gcc/x64/debug</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
