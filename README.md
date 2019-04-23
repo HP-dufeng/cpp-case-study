@@ -9,4 +9,4 @@
 - [Library Management Improved](LibraryManagementImproved) -- use point to improved project 
 - [TextQuery](TextQuery) -- c++ primer chapter 12
 - [Clock](Clock) -- use qt to create a clock app
-- [Content Manage](cm) -- an example project that use qt5 and mvc
+- [Content Manage](cm) -- an more real world project that use qt5 and mvc
