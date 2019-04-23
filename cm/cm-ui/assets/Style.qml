@@ -9,7 +9,7 @@ Item {
     readonly property color colourNavigationBarBackground: "#000000"
     readonly property color colourNavigationBarFont: "#ffffff"
     readonly property int pixelSizeNavigationBarIcon: 42
-
+    readonly property int pixelSizeNavigationBarText: 22
     readonly property real widthNavigationBarCollapsed: widthNavigationButtonIcon
     readonly property real heightNavigationBarExpanded: widthNavigationButton
 
