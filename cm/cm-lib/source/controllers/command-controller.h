@@ -2,16 +2,34 @@
 #define COMMANDCONTROLLER_H
 
 #include <QObject>
+#include <QtQml/QQmlListProperty>
+#include <cm-lib_global.h>
+#include <framework/command.h>
 
-class CommandController : public QObject
-{
+namespace cm {
+namespace controllers {
+
+class CMLIBSHARED_EXPORT CommandController : public QObject {
     Q_OBJECT
-public:
-    explicit CommandController(QObject *parent = nullptr);
+    Q_PROPERTY(QQmlListProperty<cm::framework::Command>
+               ui_createClientViewContextCommands READ
+               ui_createClientViewContextCommands CONSTANT)
 
-signals:
+public:
+    explicit CommandController(QObject *_parent = nullptr);
+    ~CommandController();
+
+    QQmlListProperty<framework::Command>
+    ui_createClientViewContextCommands();
 
 public slots:
+    void onCreateClientSaveExecuted();
+
+private:
+    class Implementation;
+    QScopedPointer<Implementation> implementation;
 };
+
+}}
 
 #endif // COMMANDCONTROLLER_H
