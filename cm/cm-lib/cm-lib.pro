@@ -37,12 +37,22 @@ INCLUDEPATH += source
 SOURCES += source/models/client.cpp \
     source/controllers/command-controller.cpp \
     source/controllers/mastercontroller.cpp \
+    source/data/DateTimeDecorator.cpp \
+    source/data/EnumeratorDecorator.cpp \
+    source/data/IntDecorator.cpp \
+    source/data/StringDecorator.cpp \
+    source/data/datadecorator.cpp \
     source/framework/command.cpp
 
 HEADERS += source/cm-lib_global.h \
             source/controllers/command-controller.h \
             source/controllers/mastercontroller.h \
             source/controllers/navigation-controller.h \
+            source/data/DateTimeDecorator.h \
+            source/data/EnumeratorDecorator.h \
+            source/data/IntDecorator.h \
+            source/data/StringDecorator.h \
+            source/data/datadecorator.h \
             source/framework/command.h \
             source/models/client.h
 
