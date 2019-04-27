@@ -42,6 +42,7 @@ SOURCES += source/models/client.cpp \
     source/data/IntDecorator.cpp \
     source/data/StringDecorator.cpp \
     source/data/datadecorator.cpp \
+    source/data/entity.cpp \
     source/framework/command.cpp
 
 HEADERS += source/cm-lib_global.h \
@@ -53,6 +54,8 @@ HEADERS += source/cm-lib_global.h \
             source/data/IntDecorator.h \
             source/data/StringDecorator.h \
             source/data/datadecorator.h \
+            source/data/entity-connection.h \
+            source/data/entity.h \
             source/framework/command.h \
             source/models/client.h
 

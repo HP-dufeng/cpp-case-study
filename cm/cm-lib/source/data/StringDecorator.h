@@ -15,7 +15,7 @@ namespace data {
 
 class CMLIBSHARED_EXPORT StringDecorator : public DataDecorator {
     Q_OBJECT
-    Q_PROPERTY(QString ui_value READ value WRITE setVale NOTIFY valueChanged)
+    Q_PROPERTY(QString ui_value READ value WRITE setValue NOTIFY valueChanged)
 
 public:
     StringDecorator(Entity *parentEntity = nullptr,
