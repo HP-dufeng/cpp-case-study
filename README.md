@@ -12,3 +12,4 @@
 - [Content Manage](cm) -- an more real world project that use qt5 and mvc
 - [TODO App](todo)
 - [System Info](sysinfo) -- cross-platform, singleton & stragegy pattern, qt chart, qmake
+- [Picture Gallery](gallery-core) -- smart pointer, database, qt model, mvc 
